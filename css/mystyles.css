@@ -468,7 +468,9 @@ a {
 }
 
 .main-list .slick-prev,
-.main-list .slick-next {
+.main-list .slick-next,
+.lSAction > .lSNext,
+.lSAction > .lSPrev {
     background: url(../images/sprite.png) no-repeat 0 0 transparent;
     height: 46px;
     width: 32px;
@@ -476,17 +478,25 @@ a {
     top: 120px;
 }
 
+.lSAction > .lSNext,
+.lSAction > .lSPrev {
+    top: 50%;
+    margin-top: -23px;
+}
+
 .main-list .slick-prev:before,
 .main-list .slick-next:before {
     content: "";
 }
 
-.main-list .slick-prev {
+.main-list .slick-prev,
+.lSAction > .lSPrev {
     left: 10px;
     background-position: -232px 0;
 }
 
-.main-list .slick-next {
+.main-list .slick-next,
+.lSAction > .lSNext {
     right: 10px;
     background-position: -271px 0;
 }
@@ -1129,6 +1139,10 @@ footer {
     width: 24px;
 }
 
+.detail-page .result-label {
+    margin-bottom: 3px;
+}
+
 .result-label {
     width: auto;
     font-weight: 500 !important;
@@ -1162,12 +1176,19 @@ footer {
     color: #000;
 }
 
+.list-icon {
+    margin-bottom: 17px;
+}
+
 .list-icon li {
     float: left;
-    width: 50px;
-    height: 50px;
     margin-right: 10px;
     font-size: 12px;
+    width: 50px;
+}
+
+.list-icon li img {
+    height: 50px;
 }
 
 .list-icon li:last-child {
@@ -1176,4 +1197,49 @@ footer {
 
 .list-icon li img {
     margin-bottom: 3px;
+}
+
+.slider {
+    padding: 30px;
+    background-color: #f2f2f2;
+    margin-bottom: 34px;
+}
+
+.lSSlideWrapper {
+    margin-bottom: 14px;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+    padding: 4px;
+    background-color: #fff;
+    margin-right: 1.25% !important;
+    width: 10% !important;
+    margin-bottom: 10px;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active {
+    background-color: #0c2c91;
+    border-radius: 0;
+}
+
+.lSSlideOuter .lSPager.lSGallery li:nth-child(9n+9) {
+    margin-right: 0 !important;
+    
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+    width: 100% !important;
+}
+
+.note-detail {
+    margin-bottom: 20px;
+}
+
+.results-desc-detail {
+    margin-bottom: 32px;
+}
+
+.detail-page .section-title {
+    font-size: 24px;
+    color: #333;
 }
