@@ -1242,6 +1242,10 @@ footer {
     margin-bottom: 14px;
 }
 
+.lSSlideOuter .lightSlider {
+    height: auto !important;
+}
+
 .lSSlideOuter .lSPager.lSGallery li {
     padding: 4px;
     background-color: #fff;
