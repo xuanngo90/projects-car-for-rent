@@ -242,12 +242,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+b,
+strong {
     font-weight: 600;
 }
 
 .color-red {
     color: #ff0000;
+}
+
+.color-orange {
+    color: #ff6e00
 }
 
 .color-black {
@@ -469,8 +475,8 @@ a {
 
 .main-list .slick-prev,
 .main-list .slick-next,
-.lSAction > .lSNext,
-.lSAction > .lSPrev {
+.lSAction>.lSNext,
+.lSAction>.lSPrev {
     background: url(../images/sprite.png) no-repeat 0 0 transparent;
     height: 46px;
     width: 32px;
@@ -478,8 +484,8 @@ a {
     top: 120px;
 }
 
-.lSAction > .lSNext,
-.lSAction > .lSPrev {
+.lSAction>.lSNext,
+.lSAction>.lSPrev {
     top: 50%;
     margin-top: -23px;
 }
@@ -490,13 +496,13 @@ a {
 }
 
 .main-list .slick-prev,
-.lSAction > .lSPrev {
+.lSAction>.lSPrev {
     left: 10px;
     background-position: -232px 0;
 }
 
 .main-list .slick-next,
-.lSAction > .lSNext {
+.lSAction>.lSNext {
     right: 10px;
     background-position: -271px 0;
 }
@@ -564,7 +570,8 @@ a {
     height: 146px;
     margin: 0 auto;
     padding: 50px 215px;
-    width: 920px;
+    max-width: 920px;
+    width: 100%;
 }
 
 .blsearch {
@@ -910,6 +917,14 @@ footer {
     margin-right: 0;
 }
 
+.w62-5 {
+    width: 62.5%;
+}
+
+.w37-5 {
+    width: 37.5%;
+}
+
 .w60 {
     max-width: 60%;
 }
@@ -949,6 +964,13 @@ footer {
 .input-cell {
     width: 33.33%;
     float: left;
+}
+
+.detail {
+    color: #124ee5;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
 }
 
 .ksg {
@@ -1008,6 +1030,16 @@ footer {
     background-color: #edf1fe;
     border-radius: 5px;
     padding: 15px 12px;
+    position: relative;
+    clear: both;
+}
+
+.results-desc-short {
+    margin-bottom: 15px;
+}
+
+.results-desc strong {
+    font-size: 18px;
 }
 
 .padding-left {
@@ -1021,6 +1053,7 @@ footer {
 
 .results-infos {
     margin-bottom: 10px;
+    clear: both;
 }
 
 .results-info {
@@ -1224,7 +1257,6 @@ footer {
 
 .lSSlideOuter .lSPager.lSGallery li:nth-child(9n+9) {
     margin-right: 0 !important;
-    
 }
 
 .lSSlideOuter .lSPager.lSGallery {
@@ -1242,4 +1274,221 @@ footer {
 .detail-page .section-title {
     font-size: 24px;
     color: #333;
+}
+
+.results-desc:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    background: url(../images/arrow.png) no-repeat center center transparent;
+}
+
+.place-position {
+    margin-bottom: 24px;
+}
+
+.place-position .col-2 {
+    padding: 0;
+}
+
+.map {
+    padding-right: 8.55%;
+}
+
+.map img {
+    width: 100%;
+    height: auto
+}
+
+.textnote {
+    margin: 10px 0 30px;
+}
+
+.inline-table>.table-row>.table-cell {
+    width: 25%;
+}
+
+.title-table {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #0c2c91;
+}
+
+.sub-table {
+    font-size: 13px;
+}
+
+.sub-table .table-cell {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.table-row .table-cell.hasChild {
+    padding: 0;
+}
+
+.banner {
+    margin-bottom: 30px;
+}
+
+.bcontact {
+    padding: 4px;
+    background-color: #0c2c91;
+}
+
+.bcontact>.left {
+    width: 35%;
+    padding: 22px 18px;
+}
+
+.bcontact .left .title {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.bcontact .left p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bcontact>.right {
+    width: 65%;
+    background-color: #fff;
+    padding: 16px 25px;
+    color: #333;
+}
+
+.listbtn {
+    float: right;
+    max-width: 40%;
+}
+
+.listbtn li {
+    float: right;
+}
+
+.listbtn .block-btn {
+    padding: 1px 15px;
+}
+
+.listbtn .block-btn i {
+    background: url(../images/sprite2.png) no-repeat 0 0 transparent;
+}
+
+.listvertical {
+    width: 100%;
+    max-width: none;
+}
+
+.listvertical li {
+    max-width: 232px;
+    width: 100%;
+}
+
+.listvertical li .block-btn {
+    width: 100%;
+    margin: 0 0 10px;
+    background-color: #333;
+}
+
+.listvertical li .default-btn {
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+.block-btn .contactBtn {
+    width: 22px;
+    height: 27px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 8px;
+}
+
+.block-btn.default-btn {
+    background-color: #fff;
+    border: 1px solid #939393;
+    padding-bottom: 0;
+    padding-top: 0;
+    color: #333;
+    margin-left: 7px;
+}
+
+.block-btn .printBtn {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+    background-position: -28px 0 !important;
+}
+
+.phonenumber {
+    padding: 8px 0;
+    padding-left: 84px;
+    position: relative;
+    margin-bottom: 9px;
+}
+
+.timenumber {
+    padding-left: 25px;
+}
+
+.phonenumber:after {
+    content: "";
+    display: block;
+    background: url(../images/sprite2.png) no-repeat -64px 0 transparent;
+    width: 44px;
+    height: 72px;
+    left: 23px;
+    position: absolute;
+    top: 0;
+}
+
+.phonenumber .number {
+    width: 100%;
+    display: block
+}
+
+.bignumber {
+    font-size: 36px;
+}
+
+.smallnumber {
+    font-size: 20px;
+}
+
+
+/* Face checkbox */
+
+.checkbox {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.facecheckbox {
+    padding: 1px 0 1px 30px;
+    background: url(../images/checkbox.png) no-repeat left center transparent;
+}
+
+.checkbox:checked+.facecheckbox {
+    background-image: url(../images/checkbox-checked.png);
+}
+
+.input-row {
+    margin-bottom: 5px;
+}
+
+.input-row:last-child {
+    margin-bottom: 0;
 }

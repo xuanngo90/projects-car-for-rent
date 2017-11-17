@@ -1,913 +1,921 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>検索</title>
-	<meta charset='utf-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-	<link rel="stylesheet" type="text/css" href="css/mystyles.css">
-</head>
-<body>
-	<header>
-		<section class="main-header clearfix">
-			<div class="container ">
-				<h1 class="logo">
-					<a href="" title="牧不動産">牧不動産</a>
-				</h1>
 
-				<div class="clearfix header">
-					<form id="search-global" class="form-inline searchform">
-						<input type="text" class="form-control" id="search-global-input">
-				
-						<button href="" class="block-btn">
+<head>
+    <title>検索</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <section class="main-header clearfix">
+            <div class="container ">
+                <h1 class="logo">
+                    <a href="" title="牧不動産">牧不動産</a>
+                </h1>
+
+                <div class="clearfix header">
+                    <form id="search-global" class="form-inline searchform">
+                        <input type="text" class="form-control" id="search-global-input">
+
+                        <button href="" class="block-btn">
 							<i class="searchBtn"></i>検索
 						</button>
-					</form>
-					<ul class="menu">
-						<li><a href="" title="弊社概要">弊社概要</a></li>
-						<li><a href="" title="お知らせ">お知らせ</a></li>
-					</ul>
-				</div>
-				
-			</div>
-		</section>
-	</header>
+                    </form>
+                    <ul class="menu">
+                        <li><a href="" title="弊社概要">弊社概要</a></li>
+                        <li><a href="" title="お知らせ">お知らせ</a></li>
+                    </ul>
+                </div>
 
-	<section>
-		<div class="container clearfix">
-			<div class="breakcumb">
-				<nav><a href="" title="TOP">TOP</a>&gt;<a title="検索">検索</a></nav>
-			</div>
+            </div>
+        </section>
+    </header>
 
-			<div class="main-content">
-				<h2 class="content-title">検索</h2>
-				
-				<div class="content-text">
-					<div class="filter-box">
-						<form id="filter-form" class="filter-table">
-							<div class="box-table table">
-								<div class="table-row table-border">
-									<div class="table-cell table-cell-bg">路線指定</div>
-									<div class="table-cell">
-										<div class="input-group w60 clearfix">
-											<div class="input-sub-group border-right clearfix">
-												<ul>
-													<li class="input-row">
-														<input type="checkbox" name="inp1" id="inp1">
-														<label for="inp1">都営大江戸線</label>
-													</li>
+    <section>
+        <div class="container clearfix">
+            <div class="breakcumb">
+                <nav><a href="" title="TOP">TOP</a>&gt;<a title="検索">検索</a></nav>
+            </div>
 
-													<li class="input-row">
-														<input type="checkbox" name="inp2" id="inp2">
-														<label for="inp2">東京メトロ有楽町線</label>
-													</li>
+            <div class="main-content">
+                <h2 class="content-title">検索</h2>
 
-													<li class="input-row">
-														<input type="checkbox" name="inp3" id="inp3">
-														<label for="inp3">西武池袋線</label>
-													</li>
-												</ul>
-											</div>
+                <div class="content-text">
+                    <div class="filter-box">
+                        <form id="filter-form" class="filter-table">
+                            <div class="box-table table">
+                                <div class="table-row table-border">
+                                    <div class="table-cell table-cell-bg">路線指定</div>
+                                    <div class="table-cell">
+                                        <div class="input-group w60 clearfix">
+                                            <div class="input-sub-group border-right clearfix">
+                                                <ul class="clearfix">
+                                                    <li class="input-row">
+                                                        <input type="checkbox" class="checkbox" name="inp1" id="inp1">
+                                                        <label class="facecheckbox" for="inp1">都営大江戸線</label>
+                                                    </li>
 
-											<div class="input-sub-group last clearfix">
-												<ul>
-													<li class="input-row">
-														<ul>
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">落合南長崎</label>
-															</li>
+                                                    <li class="input-row">
+                                                        <input type="checkbox" class="checkbox" name="inp2" id="inp2">
+                                                        <label class="facecheckbox" for="inp2">東京メトロ有楽町線</label>
+                                                    </li>
 
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">新江古田</label>
-															</li>
-														</ul>
-													</li>
+                                                    <li class="input-row">
+                                                        <input type="checkbox" class="checkbox" name="inp3" id="inp3">
+                                                        <label class="facecheckbox" for="inp3">西武池袋線</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
-													<li class="input-row">
-														<ul>
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">要町</label>
-															</li>
+                                            <div class="input-sub-group last clearfix">
+                                                <ul class="clearfix">
+                                                    <li class="input-row">
+                                                        <ul class="clearfix">
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp4">
+                                                                <label class="facecheckbox" for="inp4">落合南長崎</label>
+                                                            </li>
 
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">千川</label>
-															</li>
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp5">
+                                                                <label class="facecheckbox" for="inp5">新江古田</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
 
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">小竹向原</label>
-															</li>
-														</ul>
-													</li>
+                                                    <li class="input-row">
+                                                        <ul class="clearfix">
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp6">
+                                                                <label class="facecheckbox" for="inp6">要町</label>
+                                                            </li>
 
-													<li class="input-row">
-														<ul>
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">椎名町</label>
-															</li>
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp7">
+                                                                <label class="facecheckbox" for="inp7">千川</label>
+                                                            </li>
 
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">東長崎</label>
-															</li>
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp8">
+                                                                <label class="facecheckbox" for="inp8">小竹向原</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
 
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">江古田</label>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>									
-								</div>
+                                                    <li class="input-row">
+                                                        <ul class="clearfix">
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp9">
+                                                                <label class="facecheckbox" for="inp9">椎名町</label>
+                                                            </li>
 
-								<div class="table-row table-border">
-									<div class="table-cell table-cell-bg">家賃範囲指定</div>
-									<div class="table-cell ksg">
-										<div class="input-group">
-											<select>
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp10">
+                                                                <label class="facecheckbox" for="inp10">東長崎</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp11">
+                                                                <label class="facecheckbox" for="inp11">江古田</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="table-row table-border">
+                                    <div class="table-cell table-cell-bg">家賃範囲指定</div>
+                                    <div class="table-cell ksg">
+                                        <div class="input-group">
+                                            <select>
 												<option>下限なし</option>
 											</select>
-										</div>
-										<div class="input-group last">
-											<select>
+                                        </div>
+                                        <div class="input-group last">
+                                            <select>
 												<option>上限なし</option>
 											</select>
-										</div>
-									</div>									
-								</div>
-
-								<div class="table-row table-border">
-									<div class="table-cell table-cell-bg">こだわり<br>条件指定</div>
-									<div class="table-cell">
-										<div class="input-group w80 clearfix">
-											<div class="input-sub-group last clearfix">
-												<ul>
-													<li class="input-row">
-														<ul>
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-														</ul>
-													</li>
-
-													<li class="input-row">
-														<ul>
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-														</ul>
-													</li>
-
-													<li class="input-row">
-														<ul>
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-
-															<li class="input-cell">
-																<input type="checkbox" name="inp1" id="inp1">
-																<label for="inp1">こだわり条件</label>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>									
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-
-				<h3 class="sub-content-title">検索結果:<span>XXX</span>件</h3>
-
-				<div class="content-text clearfix">
-					<ul>
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-						<li class="box-results clearfix">
-							<div class="left first">
-								<div class="box-border">
-									<img src="images/house.png" alt="house">
-								</div>
-							</div>
-
-							<div class="left last">
-								<h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
-								<p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
-
-								<div class="results-infos">
-									<div class="result-table">
-										<div class="results-info results-info-01 border-right text-center">
-											<div class="result-row results-price clearfix">
-												<label class="label-red">賃料</label>
-												<span class="color-red">13.0万円</span>
-											</div>
-
-											<div class="result-row">共益費：<span>7,000円</span></div>
-
-											<div class="result-row clearfix">
-												<div class="result-cell ">
-													<label class="label">敷</label>
-													<span>19.5万</span>
-												</div>
-
-												<div class="result-cell">
-													<label class="label">礼</label>
-													<span>58.5万</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="results-info results-info-02 border-right padding-left text-center">
-											<label>3LDK</label>
-											<span>120㎡</span>
-										</div>
-
-										<div class="results-info results-info-03 border-right padding-left">
-											<span>アパート</span>
-											<span>18階/24階建</span>
-										</div>
-
-										<div class="results-info results-info-04 border-right padding-left">
-											<span>有楽町線 / 千川 徒歩5分</span>
-										</div>
-
-										<div class="results-info results-info-05 padding-left">
-											<span>駅近</span>
-											<span>オートロック</span>
-											<span>宅配ボックス付き</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="pagination">
-			<div class="listnumber">
-			  <a class="btn-action btn-prev" href="#">&laquo;</a>
-			  <a class="active" href="#">1</a>
-			  <a href="#">2</a>
-			  <a href="#">3</a>
-			  <a href="#">4</a>
-			  <a href="#">5</a>
-			  <a href="#">6</a>
-			  <a href="#">7</a>
-			  <a class="btn-action btn-next" href="#">&raquo;</a>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container clearfix">
-			<div class="clearfix">
-				<div class="block-contact">
-					<h4>牧不動産株式会社</h4>
-					<h4>TEL:03-3973-8166</h4>
-					<span>住所 東京都豊島区長崎4‐29‐1</span>
-				</div>
-
-				<div class="block-info">
-					東京都知事免許（12）第29804号
-					<ul>
-						<li>（社）東京都宅地建物取引業協会</li>
-						<li>（社）全国宅地建物取引業保証協会</li>
-					</ul>
-				</div>
-
-				<div class="block-social">
-					<ul>
-						<li><a class="social-icon twicon" href="" title="twitter"></a></li>
-						<li><a class="social-icon fbicon" href="" title="facebook"></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="copyright">Copyright (C) All Rights Reserved by 牧不動産株式会社</div>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
-	<!-- <script type="text/javascript" src="js/swiper.jquery.js"></script> -->
-	<script type="text/javascript" src="js/slick.js"></script>
-	<script type="text/javascript" src="js/myscripts.js"></script>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="table-row table-border">
+                                    <div class="table-cell table-cell-bg">こだわり<br>条件指定</div>
+                                    <div class="table-cell">
+                                        <div class="input-group w80 clearfix">
+                                            <div class="input-sub-group last clearfix">
+                                                <ul class="clearfix">
+                                                    <li class="input-row">
+                                                        <ul class="clearfix">
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp12">
+                                                                <label class="facecheckbox" for="inp12">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp13">
+                                                                <label class="facecheckbox" for="inp13">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp14">
+                                                                <label class="facecheckbox" for="inp14">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp15">
+                                                                <label class="facecheckbox" for="inp15">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp16">
+                                                                <label class="facecheckbox" for="inp16">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp17">
+                                                                <label class="facecheckbox" for="inp17">こだわり条件</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="input-row">
+                                                        <ul class="clearfix">
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp18">
+                                                                <label class="facecheckbox" for="inp18">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp19">
+                                                                <label class="facecheckbox" for="inp19">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp20">
+                                                                <label class="facecheckbox" for="inp20">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp21">
+                                                                <label class="facecheckbox" for="inp21">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp22">
+                                                                <label class="facecheckbox" for="inp22">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp23">
+                                                                <label class="facecheckbox" for="inp23">こだわり条件</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="input-row">
+                                                        <ul class="clearfix">
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp24">
+                                                                <label class="facecheckbox" for="inp24">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp25">
+                                                                <label class="facecheckbox" for="inp25">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp26">
+                                                                <label class="facecheckbox" for="inp26">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp27">
+                                                                <label class="facecheckbox" for="inp27">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp28">
+                                                                <label class="facecheckbox" for="inp28">こだわり条件</label>
+                                                            </li>
+
+                                                            <li class="input-cell">
+                                                                <input type="checkbox" class="checkbox" name="inp1" id="inp29">
+                                                                <label class="facecheckbox" for="inp29">こだわり条件</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <h3 class="sub-content-title">検索結果:<span>XXX</span>件</h3>
+
+                <div class="content-text clearfix">
+                    <ul class="clearfix">
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="box-results clearfix">
+                            <div class="left first">
+                                <div class="box-border">
+                                    <img src="images/house.png" alt="house">
+                                </div>
+                            </div>
+
+                            <div class="left last">
+                                <h3 class="results-title"><a href="" title="ここに物件名が入ります。ここに物件名が入ります。">ここに物件名が入ります。ここに物件名が入ります。</a></h3>
+                                <p class="results-desc">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+
+                                <div class="results-infos">
+                                    <div class="result-table">
+                                        <div class="results-info results-info-01 border-right text-center">
+                                            <div class="result-row results-price clearfix">
+                                                <label class="label-red">賃料</label>
+                                                <span class="color-red">13.0万円</span>
+                                            </div>
+
+                                            <div class="result-row">共益費：<span>7,000円</span></div>
+
+                                            <div class="result-row clearfix">
+                                                <div class="result-cell ">
+                                                    <label class="label">敷</label>
+                                                    <span>19.5万</span>
+                                                </div>
+
+                                                <div class="result-cell">
+                                                    <label class="label">礼</label>
+                                                    <span>58.5万</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="results-info results-info-02 border-right padding-left text-center">
+                                            <label>3LDK</label>
+                                            <span>120㎡</span>
+                                        </div>
+
+                                        <div class="results-info results-info-03 border-right padding-left">
+                                            <span>アパート</span>
+                                            <span>18階/24階建</span>
+                                        </div>
+
+                                        <div class="results-info results-info-04 border-right padding-left">
+                                            <span>有楽町線 / 千川 徒歩5分</span>
+                                        </div>
+
+                                        <div class="results-info results-info-05 padding-left">
+                                            <span>駅近</span>
+                                            <span>オートロック</span>
+                                            <span>宅配ボックス付き</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="listnumber">
+                <a class="btn-action btn-prev" href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a class="btn-action btn-next" href="#">&raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="clearfix">
+                <div class="block-contact">
+                    <h4>牧不動産株式会社</h4>
+                    <h4>TEL:03-3973-8166</h4>
+                    <span>住所 東京都豊島区長崎4‐29‐1</span>
+                </div>
+
+                <div class="block-info">
+                    東京都知事免許（12）第29804号
+                    <ul class="clearfix">
+                        <li>（社）東京都宅地建物取引業協会</li>
+                        <li>（社）全国宅地建物取引業保証協会</li>
+                    </ul>
+                </div>
+
+                <div class="block-social">
+                    <ul class="clearfix">
+                        <li>
+                            <a class="social-icon twicon" href="" title="twitter"></a>
+                        </li>
+                        <li>
+                            <a class="social-icon fbicon" href="" title="facebook"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">Copyright (C) All Rights Reserved by 牧不動産株式会社</div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <!-- <script type="text/javascript" src="js/swiper.jquery.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/myscripts.js"></script>
 </body>
+
 </html>
